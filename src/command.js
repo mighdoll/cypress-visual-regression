@@ -11,7 +11,7 @@ function thresholdOption(defaultScreenshotOptions, params) {
     return params.errorThreshold;
   }
 
-  return defaultScreenshotOptions?.errorThreshold || 0;
+  return defaultScreenshotOptions ? defaultScreenshotOptions.errorThreshold || 0 : 0;
 }
 
 /** Take a screenshot and move the file to specified folder */
